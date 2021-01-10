@@ -2,6 +2,7 @@ pub mod split_strings;
 pub mod dubstep;
 pub mod regex_validate_pin_code;
 pub mod two_to_one;
+pub mod descending_order;
 
 fn main() {
     assert_eq!(split_strings::solution("abcdef"), ["ab", "cd", "ef"]);
@@ -11,5 +12,8 @@ fn main() {
     assert!(!regex_validate_pin_code::validate_pin("12345"));
     assert!(!regex_validate_pin_code::validate_pin("a2345"));
     assert_eq!(two_to_one::longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"), "abcdefklmopqwxy");
-    assert_eq!(two_to_one::longest("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz"), "abcdefghijklmnopqrstuvwxyz")
+    assert_eq!(two_to_one::longest("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz"), "abcdefghijklmnopqrstuvwxyz");
+    assert_eq!(descending_order::descending_order(42145), 54421);
+    assert_eq!(descending_order::descending_order(145263), 654321);
+    assert_eq!(descending_order::descending_order(123456789), 987654321)
 }
