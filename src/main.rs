@@ -6,6 +6,7 @@ pub mod descending_order;
 pub mod which_are_in;
 pub mod complementary_dna;
 pub mod playing_with_digits;
+pub mod consecutive_strings;
 
 fn main() {
     assert_eq!(split_strings::solution("abcdef"), ["ab", "cd", "ef"]);
@@ -26,5 +27,7 @@ fn main() {
     assert_eq!(playing_with_digits::dig_pow(89, 1), 1);
     assert_eq!(playing_with_digits::dig_pow(92, 1), -1);
     assert_eq!(playing_with_digits::dig_pow(695, 2), 2);
-    assert_eq!(playing_with_digits::dig_pow(46288, 3), 51)
+    assert_eq!(playing_with_digits::dig_pow(46288, 3), 51);
+    assert_eq!(consecutive_strings::longest_consec(vec!["tree", "foling", "trashy", "blue", "abcdef", "uvwxyz"], 2), "folingtrashy");
+    assert_eq!(consecutive_strings::longest_consec(vec!["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2), "abigailtheta")
 }
