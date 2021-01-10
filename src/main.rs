@@ -9,6 +9,7 @@ pub mod regex_validate_pin_code;
 pub mod split_strings;
 pub mod two_to_one;
 pub mod which_are_in;
+pub mod your_order_please;
 
 fn main() {
     assert_eq!(complementary_dna::dna_strand("ATTGC"), "TAACG");
@@ -44,4 +45,8 @@ fn main() {
 
     assert_eq!(which_are_in::in_array(&["arp", "live", "strong"], &["lively", "alive", "harp", "sharp", "armstrong"]), ["arp", "live", "strong"]);
     assert_eq!(which_are_in::in_array(&["tarp", "mice", "bull"], &["lively", "alive", "harp", "sharp", "armstrong"]), [] as [&str; 0]);
+
+    assert_eq!(your_order_please::order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est");
+    assert_eq!(your_order_please::order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople");
+    assert_eq!(your_order_please::order(""), "");
 }

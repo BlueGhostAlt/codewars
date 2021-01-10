@@ -26,3 +26,5 @@
   * [Solution](src/two_to_one.rs)
 * [Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58)
   * [Solution](src/which_are_in.rs)
+* [Your order, please](https://www.codewars.com/kata/55c45be3b2079eccff00010f)
+  * [Solution](src/your_order_please.rs)
