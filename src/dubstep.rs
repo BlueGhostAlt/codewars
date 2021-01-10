@@ -7,5 +7,6 @@ pub fn song_decoder(song: &str) -> String {
     let original_words = original_non_empty_words.collect::<Vec<_>>();
 
     let original = original_words.join(" ");
+
     original
 }

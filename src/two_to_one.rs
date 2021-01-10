@@ -6,5 +6,6 @@ pub fn longest(a1: &str, a2: &str) -> String {
     chars.dedup();
 
     let chars = chars.iter().collect::<String>();
+
     chars
 }
