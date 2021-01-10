@@ -3,6 +3,7 @@ pub mod dubstep;
 pub mod regex_validate_pin_code;
 pub mod two_to_one;
 pub mod descending_order;
+pub mod which_are_in;
 
 fn main() {
     assert_eq!(split_strings::solution("abcdef"), ["ab", "cd", "ef"]);
@@ -15,5 +16,7 @@ fn main() {
     assert_eq!(two_to_one::longest("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz"), "abcdefghijklmnopqrstuvwxyz");
     assert_eq!(descending_order::descending_order(42145), 54421);
     assert_eq!(descending_order::descending_order(145263), 654321);
-    assert_eq!(descending_order::descending_order(123456789), 987654321)
+    assert_eq!(descending_order::descending_order(123456789), 987654321);
+    assert_eq!(which_are_in::in_array(&["arp", "live", "strong"], &["lively", "alive", "harp", "sharp", "armstrong"]), ["arp", "live", "strong"]);
+    assert_eq!(which_are_in::in_array(&["tarp", "mice", "bull"], &["lively", "alive", "harp", "sharp", "armstrong"]), [] as [&str; 0])
 }
