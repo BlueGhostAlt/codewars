@@ -5,6 +5,7 @@ pub mod two_to_one;
 pub mod descending_order;
 pub mod which_are_in;
 pub mod complementary_dna;
+pub mod playing_with_digits;
 
 fn main() {
     assert_eq!(split_strings::solution("abcdef"), ["ab", "cd", "ef"]);
@@ -21,5 +22,9 @@ fn main() {
     assert_eq!(which_are_in::in_array(&["arp", "live", "strong"], &["lively", "alive", "harp", "sharp", "armstrong"]), ["arp", "live", "strong"]);
     assert_eq!(which_are_in::in_array(&["tarp", "mice", "bull"], &["lively", "alive", "harp", "sharp", "armstrong"]), [] as [&str; 0]);
     assert_eq!(complementary_dna::dna_strand("ATTGC"), "TAACG");
-    assert_eq!(complementary_dna::dna_strand("GTAT"), "CATA")
+    assert_eq!(complementary_dna::dna_strand("GTAT"), "CATA");
+    assert_eq!(playing_with_digits::dig_pow(89, 1), 1);
+    assert_eq!(playing_with_digits::dig_pow(92, 1), -1);
+    assert_eq!(playing_with_digits::dig_pow(695, 2), 2);
+    assert_eq!(playing_with_digits::dig_pow(46288, 3), 51)
 }
