@@ -14,6 +14,8 @@
   * [Solution](src/descending_order.rs)
 * [Dubstep](https://www.codewars.com/kata/551dc350bf4e526099000ae5)
   * [Solution](src/dubstep.rs)
+* [Is my friend cheating?](https://www.codewars.com/kata/5547cc7dcad755e480000004)
+  * [Solution](src/is_my_friend_cheating.rs)
 * [Playing with digits](https://www.codewars.com/kata/5552101f47fc5178b1000050)
   * [Solution](src/playing_with_digits.rs)
 * [Regex validate PIN code](https://www.codewars.com/kata/55f8a9c06c018a0d6e000132)
