@@ -1,3 +1,4 @@
+
 # Advent of Code 2020
 
 ## This is just a small repository where I'll upload Rust solutions for random [Codewars](https://www.codewars.com) katas I solve when bored
@@ -7,6 +8,7 @@
 * [7 Kyu](#7-kyu)
 * [6 Kyu](#6-kyu)
 * [5 Kyu](#5-kyu)
+* [4 Kyu](#4-kyu)
 
 #### 7 Kyu
 
@@ -40,3 +42,8 @@
 
 * [Is my friend cheating?](https://www.codewars.com/kata/5547cc7dcad755e480000004)
   * [Solution](src/is_my_friend_cheating.rs)
+
+#### 4 Kyu
+
+* [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)
+  * [Solution](src/range_extraction.rs)

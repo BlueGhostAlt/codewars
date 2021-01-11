@@ -5,6 +5,7 @@ pub mod descending_order;
 pub mod dubstep;
 pub mod is_my_friend_cheating;
 pub mod playing_with_digits;
+pub mod range_extraction;
 pub mod regex_validate_pin_code;
 pub mod split_strings;
 pub mod two_to_one;
@@ -32,6 +33,9 @@ fn main() {
     assert_eq!(playing_with_digits::dig_pow(92, 1), -1);
     assert_eq!(playing_with_digits::dig_pow(695, 2), 2);
     assert_eq!(playing_with_digits::dig_pow(46288, 3), 51);
+
+    assert_eq!(range_extraction::range_extraction(&[-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]), "-6,-3-1,3-5,7-11,14,15,17-20");
+    assert_eq!(range_extraction::range_extraction(&[-3, -2, -1, 2, 10, 15, 16, 18, 19, 20]), "-3--1,2,10,15,16,18-20");
 
     assert!(regex_validate_pin_code::validate_pin("1234"));
     assert!(!regex_validate_pin_code::validate_pin("12345"));
