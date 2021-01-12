@@ -45,6 +45,8 @@
 
 #### 4 Kyu
 
+* [Factorial tail](https://www.codewars.com/kata/55c4eb777e07c13528000021)
+  * [Solution](src/factorial_tail.rs)
 * [Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e)
   * [Solution](src/next_bigger_number_with_the_same_digits.rs)
 * [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)

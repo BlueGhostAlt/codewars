@@ -5,6 +5,7 @@ pub mod consecutive_strings;
 pub mod create_phone_number;
 pub mod descending_order;
 pub mod dubstep;
+pub mod factorial_tail;
 pub mod is_my_friend_cheating;
 pub mod next_bigger_number_with_the_same_digits;
 pub mod playing_with_digits;
@@ -29,6 +30,9 @@ fn main() {
     assert_eq!(descending_order::descending_order(123456789), 987654321);
 
     assert_eq!(dubstep::song_decoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"), "WE ARE THE CHAMPIONS MY FRIEND");
+
+    assert_eq!(factorial_tail::zeroes(10, 10), 2);
+    assert_eq!(factorial_tail::zeroes(16, 16), 3);
 
     assert_eq!(is_my_friend_cheating::remove_nb(26), vec![(15, 21), (21, 15)]);
 
