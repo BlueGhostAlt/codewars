@@ -1,9 +1,12 @@
+#![feature(destructuring_assignment)]
+
 pub mod complementary_dna;
 pub mod consecutive_strings;
 pub mod create_phone_number;
 pub mod descending_order;
 pub mod dubstep;
 pub mod is_my_friend_cheating;
+pub mod next_bigger_number_with_the_same_digits;
 pub mod playing_with_digits;
 pub mod range_extraction;
 pub mod regex_validate_pin_code;
@@ -28,6 +31,10 @@ fn main() {
     assert_eq!(dubstep::song_decoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"), "WE ARE THE CHAMPIONS MY FRIEND");
 
     assert_eq!(is_my_friend_cheating::remove_nb(26), vec![(15, 21), (21, 15)]);
+
+    assert_eq!(next_bigger_number_with_the_same_digits::next_bigger_number(12), 21);
+    assert_eq!(next_bigger_number_with_the_same_digits::next_bigger_number(513), 531);
+    assert_eq!(next_bigger_number_with_the_same_digits::next_bigger_number(2017), 2071);
 
     assert_eq!(playing_with_digits::dig_pow(89, 1), 1);
     assert_eq!(playing_with_digits::dig_pow(92, 1), -1);
