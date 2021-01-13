@@ -7,6 +7,7 @@ pub mod descending_order;
 pub mod dubstep;
 pub mod factorial_tail;
 pub mod is_my_friend_cheating;
+pub mod mexican_wave;
 pub mod next_bigger_number_with_the_same_digits;
 pub mod playing_with_digits;
 pub mod range_extraction;
@@ -35,6 +36,8 @@ fn main() {
     assert_eq!(factorial_tail::zeroes(16, 16), 3);
 
     assert_eq!(is_my_friend_cheating::remove_nb(26), vec![(15, 21), (21, 15)]);
+
+    assert_eq!(mexican_wave::wave("hello"), vec!["Hello", "hEllo", "heLlo", "helLo", "hellO"]);
 
     assert_eq!(next_bigger_number_with_the_same_digits::next_bigger_number(12), 21);
     assert_eq!(next_bigger_number_with_the_same_digits::next_bigger_number(513), 531);

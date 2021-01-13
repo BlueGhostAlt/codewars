@@ -29,6 +29,8 @@
   * [Solution](src/create_phone_number.rs)
 * [Dubstep](https://www.codewars.com/kata/551dc350bf4e526099000ae5)
   * [Solution](src/dubstep.rs)
+* [Mexican Wave](https://www.codewars.com/kata/58f5c63f1e26ecda7e000029)
+  * [Solution](src/mexican_wave.rs)
 * [Playing with digits](https://www.codewars.com/kata/5552101f47fc5178b1000050)
   * [Solution](src/playing_with_digits.rs)
 * [Split Strings](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001)
