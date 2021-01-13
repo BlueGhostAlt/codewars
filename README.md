@@ -47,6 +47,8 @@
 
 #### 4 Kyu
 
+* [Algebraic Lists](https://www.codewars.com/kata/529a92d9aba78c356b000353)
+  * [Solution](src/algebraic_lists.rs)
 * [Factorial tail](https://www.codewars.com/kata/55c4eb777e07c13528000021)
   * [Solution](src/factorial_tail.rs)
 * [Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e)

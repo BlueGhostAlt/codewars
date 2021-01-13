@@ -1,5 +1,8 @@
+#![feature(box_patterns)]
+#![feature(box_syntax)]
 #![feature(destructuring_assignment)]
 
+pub mod algebraic_lists;
 pub mod complementary_dna;
 pub mod consecutive_strings;
 pub mod create_phone_number;
@@ -18,6 +21,19 @@ pub mod which_are_in;
 pub mod your_order_please;
 
 fn main() {
+    {
+        let numbers = algebraic_lists::Cons::from_iter(vec![1, 2, 3, 4, 5]);
+        assert_eq!(numbers.filter(|x| x % 2 == 0).to_vec(), vec![2, 4]);
+        assert_eq!(numbers.map(|x| x * x).to_vec(), vec![1, 4, 9, 16, 25]);
+
+        let digits = algebraic_lists::Cons::from_iter(vec!["1", "2", "3", "4", "5"]);
+        let ints = digits
+            .map(str::parse::<i32>)
+            .map(Result::unwrap)
+            .filter(|&n| n > 3);
+        assert_eq!(ints.to_vec(), vec![4, 5]);
+    }
+
     assert_eq!(complementary_dna::dna_strand("ATTGC"), "TAACG");
     assert_eq!(complementary_dna::dna_strand("GTAT"), "CATA");
 
