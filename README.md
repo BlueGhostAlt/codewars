@@ -55,3 +55,5 @@
   * [Solution](src/next_bigger_number_with_the_same_digits.rs)
 * [Range Extraction](https://www.codewars.com/kata/51ba717bb08c1cd60f00002f)
   * [Solution](src/range_extraction.rs)
+* [Twice linear](https://www.codewars.com/kata/5672682212c8ecf83e000050)
+  * [Solution](src/twice_linear.rs)

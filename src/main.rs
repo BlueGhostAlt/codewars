@@ -16,6 +16,7 @@ pub mod playing_with_digits;
 pub mod range_extraction;
 pub mod regex_validate_pin_code;
 pub mod split_strings;
+pub mod twice_linear;
 pub mod two_to_one;
 pub mod which_are_in;
 pub mod your_order_please;
@@ -73,6 +74,8 @@ fn main() {
 
     assert_eq!(split_strings::solution("abcdef"), ["ab", "cd", "ef"]);
     assert_eq!(split_strings::solution("abcdefg"), ["ab", "cd", "ef", "g_"]);
+
+    assert_eq!(twice_linear::dbl_linear(10), 22);
 
     assert_eq!(two_to_one::longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"), "abcdefklmopqwxy");
     assert_eq!(two_to_one::longest("abcdefghijklmnopqrstuvwxyz", "abcdefghijklmnopqrstuvwxyz"), "abcdefghijklmnopqrstuvwxyz");
