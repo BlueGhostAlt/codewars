@@ -29,9 +29,8 @@ pub fn next_bigger_number(n: i64) -> i64 {
     match next_bigger_permutation {
         Some(permutation) => {
             let number = String::from_iter(permutation);
-            let number = number.parse::<i64>().unwrap();
 
-            number
+            number.parse::<i64>().unwrap()
         }
         None => -1,
     }

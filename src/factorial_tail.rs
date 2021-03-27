@@ -2,15 +2,15 @@ use std::collections::HashMap;
 
 pub fn zeroes(base: i32, number: i32) -> i32 {
     let mut prime_factors = HashMap::new();
-    let mut base = base;
+    let mut pm_base = base;
     for divisor in 2..=base {
-        while base % divisor == 0 {
+        while pm_base % divisor == 0 {
             if let Some(count) = prime_factors.get_mut(&divisor) {
                 *count += 1;
             } else {
                 prime_factors.insert(divisor, 1);
             }
-            base /= divisor;
+            pm_base /= divisor;
         }
     }
 

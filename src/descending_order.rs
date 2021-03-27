@@ -4,7 +4,6 @@ pub fn descending_order(x: u64) -> u64 {
     digits.reverse();
 
     let new_number = digits.iter().collect::<String>();
-    let new_number = new_number.parse::<u64>().unwrap_or(x);
 
-    new_number
+    new_number.parse::<u64>().unwrap_or(x)
 }

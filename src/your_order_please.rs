@@ -6,7 +6,5 @@ pub fn order(sentence: &str) -> String {
 
     words.sort_unstable_by_key(|word| word.chars().find(|c| c.is_digit(10)).unwrap_or('\0'));
 
-    let words = words.join(" ");
-
-    words
+    words.join(" ")
 }

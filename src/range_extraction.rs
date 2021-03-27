@@ -9,14 +9,12 @@ pub fn range_extraction(a: &[i32]) -> String {
                 if num - last == 1 {
                     group.push(num);
                 } else {
-                    let mut group = Vec::new();
-                    group.push(num);
+                    let group = vec![num];
                     groups.push(group);
                 }
-            },
+            }
             None => {
-                let mut group = Vec::new();
-                group.push(num);
+                let group = vec![num];
                 groups.push(group);
             }
         }
@@ -31,7 +29,5 @@ pub fn range_extraction(a: &[i32]) -> String {
         })
         .collect::<Vec<_>>();
 
-    let string = strings.join(",");
-
-    string
+    strings.join(",")
 }

@@ -6,9 +6,7 @@ pub fn longest_consec(strarr: Vec<&str>, k: usize) -> String {
     let windows = strarr.windows(k);
     let windows = windows.map(|window| window.concat()).rev();
 
-    let longest = windows
+    windows
         .max_by_key(|window| window.len())
-        .unwrap_or(String::new());
-
-    longest
+        .unwrap_or_default()
 }
