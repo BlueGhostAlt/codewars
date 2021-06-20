@@ -9,6 +9,7 @@ pub mod create_phone_number;
 pub mod descending_order;
 pub mod dubstep;
 pub mod factorial_tail;
+pub mod human_readable_duration_format;
 pub mod is_my_friend_cheating;
 pub mod mexican_wave;
 pub mod next_bigger_number_with_the_same_digits;
@@ -51,6 +52,9 @@ fn main() {
 
     assert_eq!(factorial_tail::zeroes(10, 10), 2);
     assert_eq!(factorial_tail::zeroes(16, 16), 3);
+
+    assert_eq!(human_readable_duration_format::format_duration(62), String::from("1 minute and 2 seconds"));
+    assert_eq!(human_readable_duration_format::format_duration(3662), String::from("1 hour, 1 minute and 2 seconds"));
 
     assert_eq!(is_my_friend_cheating::remove_nb(26), vec![(15, 21), (21, 15)]);
 
